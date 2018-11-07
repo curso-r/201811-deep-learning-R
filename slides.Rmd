@@ -1,0 +1,103 @@
+---
+title: "Deep Learning com R"
+author: "Curso-R"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Objetivos de hoje
+
+Responder as seguintes perguntas:
+
+* O que são redes neurais profundas e como elas funcionam?
+* Quais são os softwares utilizados para treinar esses modelos e como eles se relacionam?
+* Como treinar modelos de deep learning para alguns problemas de predição?
+
+---
+
+# Consideranções rápidas
+
+* Não vamos entrar em detalhes da matemática
+* Rodar modelos rápido!
+
+---
+
+# Inteligência Artificial, Machine Learning e Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48161809-a4ba3680-e2c2-11e8-856a-52b9a7e18586.png)
+
+---
+
+# Machine Learning
+
+- Observações: Podem ser as imagens, arquivos de som, pessoas, etc.
+- Exemplos do resultado esperado: (Também chamamos de variável resposta). Por exemplo a categoria de uma imagem, etc.
+- Métrica: uma forma de medir se o algoritmo está fazendo um bom trabalho.
+
+--
+
+Machine Learning procura aprender uma **representação** das observações que ajuda a identificar o resultado esperado.
+
+---
+
+# Outras representações
+
+![](https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/08/Projection-face.png?fit=720%2C513&ssl=1)
+
+---
+
+# Por que "Deep" Learning
+
+* Uso de camadas multiplas camadas sucessivas para aprender uma representação.
+* Chamamos de profundidade o número de camadas.
+* Alguns modelos hoje em dia possuem centenas de camadas.
+
+--
+
+## Poderia ter outros nomes
+
+- layered representations learning
+- hierarchical representations learning
+
+---
+
+# Camadas
+
+![](https://user-images.githubusercontent.com/4706822/48164108-b9013200-e2c8-11e8-86ef-652bd7f6b19a.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164481-c834af80-e2c9-11e8-97d9-6cf234454aa2.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164502-d5ea3500-e2c9-11e8-8dea-150dff09131b.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164527-e4d0e780-e2c9-11e8-91b5-1490cd3eca92.png)
+
+
+---
+
+# Primeiro exemplo
+
+
+
+

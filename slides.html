@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deep Learning com R</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Curso-R" />
+    <meta name="date" content="2018-11-07" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Deep Learning com R
+### Curso-R
+### 2018-11-07
+
+---
+
+
+
+
+# Objetivos de hoje
+
+Responder as seguintes perguntas:
+
+* O que são redes neurais profundas e como elas funcionam?
+* Quais são os softwares utilizados para treinar esses modelos e como eles se relacionam?
+* Como treinar modelos de deep learning para alguns problemas de predição?
+
+---
+
+# Consideranções rápidas
+
+* Não vamos entrar em detalhes da matemática
+* Rodar modelos rápido!
+
+---
+
+# Inteligência Artificial, Machine Learning e Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48161809-a4ba3680-e2c2-11e8-856a-52b9a7e18586.png)
+
+---
+
+# Machine Learning
+
+- Observações: Podem ser as imagens, arquivos de som, pessoas, etc.
+- Exemplos do resultado esperado: (Também chamamos de variável resposta). Por exemplo a categoria de uma imagem, etc.
+- Métrica: uma forma de medir se o algoritmo está fazendo um bom trabalho.
+
+--
+
+Machine Learning procura aprender uma **representação** das observações que ajuda a identificar o resultado esperado.
+
+---
+
+# Outras representações
+
+![](https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/08/Projection-face.png?fit=720%2C513&amp;ssl=1)
+
+---
+
+# Por que "Deep" Learning
+
+* Uso de camadas multiplas camadas sucessivas para aprender uma representação.
+* Chamamos de profundidade o número de camadas.
+* Alguns modelos hoje em dia possuem centenas de camadas.
+
+--
+
+## Poderia ter outros nomes
+
+- layered representations learning
+- hierarchical representations learning
+
+---
+
+# Camadas
+
+![](https://user-images.githubusercontent.com/4706822/48164108-b9013200-e2c8-11e8-86ef-652bd7f6b19a.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164481-c834af80-e2c9-11e8-97d9-6cf234454aa2.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164502-d5ea3500-e2c9-11e8-8dea-150dff09131b.png)
+
+---
+
+# Deep Learning
+
+![](https://user-images.githubusercontent.com/4706822/48164527-e4d0e780-e2c9-11e8-91b5-1490cd3eca92.png)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
