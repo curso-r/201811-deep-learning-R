@@ -96,8 +96,83 @@ Machine Learning procura aprender uma **representação** das observações que 
 
 ---
 
-# Primeiro exemplo
+# SGD
 
+```
+for(i in 1:num_epochs) {
+  grads <- compute_gradient(data, params)
+  params <- params - learning_rate * grads
+}
+```
+
+---
+
+# SGD
+
+<img src="https://user-images.githubusercontent.com/4706822/48280375-870fdd00-e43a-11e8-868d-c5afa9e7c257.png" style="width: 90%">
+<img src="https://user-images.githubusercontent.com/4706822/48280383-8d05be00-e43a-11e8-96e8-7f55b697ef6f.png" style="width: 90%">
+
+---
+
+# Exemplo 01
+
+---
+
+# Ativações
+
+![](https://user-images.githubusercontent.com/4706822/48278301-48772400-e434-11e8-9487-641d2a79c2f8.png)
+
+---
+
+# Ativações
+
+![](https://user-images.githubusercontent.com/4706822/48278617-334ec500-e435-11e8-8fcc-8838d2cc4590.png)
+
+<img src="https://user-images.githubusercontent.com/4706822/48278771-a0625a80-e435-11e8-97b7-031015b1d165.png" style="position: fixed; top: 330px; left: 300px; width: 50%;">
+
+---
+
+# Exemplo 02
+
+---
+
+# Exemplo 03
+
+---
+
+# Convoluções
+
+<img src="https://user-images.githubusercontent.com/4706822/48281225-10281380-e43d-11e8-9879-6a7e1b51df15.gif" style="position: fixed; top: 200px; left: 50px; width: 30%">
+
+--
+
+<img src="https://user-images.githubusercontent.com/4706822/48281225-10281380-e43d-11e8-9879-6a7e1b51df15.gif" style="position: fixed; top: 200px; left: 300px; width: 30%">
+
+<img src="https://user-images.githubusercontent.com/4706822/48281225-10281380-e43d-11e8-9879-6a7e1b51df15.gif" style="position: fixed; top: 200px; left: 600px; width: 30%">
+
+---
+
+# Max Pooling 
+
+![](https://user-images.githubusercontent.com/4706822/48281479-df94a980-e43d-11e8-9dcf-e67d7ba053e4.png)
+
+---
+
+# Convoluções
+
+![](https://user-images.githubusercontent.com/4706822/48281946-6bf39c00-e43f-11e8-845c-2d08570d85a6.png)
+
+---
+
+# Exemplo 04
+
+---
+
+# Exemplo 05
+
+---
+
+# Redes Neurais Recorrentes
 
 
 
