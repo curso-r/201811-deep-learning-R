@@ -39,6 +39,7 @@ output <- input %>%
   layer_conv_2d(filters = 128, kernel_size = c(3,3), activation = "relu") %>% 
   layer_max_pooling_2d(pool_size = c(2,2)) %>% 
   layer_flatten() %>% 
+  layer_dropout(0.1) %>% 
   layer_dense(units = 10, activation = "softmax")
 
 modelo <- keras_model(input, output)
