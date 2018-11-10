@@ -26,7 +26,8 @@ input <- layer_input(shape = 400)
 
 output <- input %>%
   layer_embedding(input_dim = 20000, output_dim = 128) %>% 
-  layer_lstm(units = 64, dropout = 0.2, recurrent_dropout = 0.2) %>% 
+  layer_lstm(units = 64) %>% 
+  # layer_cudnn_lstm(units = 64) %>% 
   layer_dense(units = 1, activation = 'sigmoid')
 
 modelo <- keras_model(input, output)

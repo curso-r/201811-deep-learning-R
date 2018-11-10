@@ -2,6 +2,7 @@
 
 library(keras)
 library(Metrics)
+library(ggplot2)
 
 # Gerando dados -----------------------------------------------------------
 
