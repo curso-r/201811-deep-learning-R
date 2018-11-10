@@ -257,6 +257,12 @@ knitr::include_graphics("keras.svg")
 
 ---
 
+# Convoluções
+
+![](https://user-images.githubusercontent.com/4706822/48296585-99f8d080-e47f-11e8-9d91-23c5f6a55f03.png)
+
+---
+
 # Max Pooling 
 
 ![](https://user-images.githubusercontent.com/4706822/48281479-df94a980-e43d-11e8-9dcf-e67d7ba053e4.png)
