@@ -4,7 +4,7 @@
     <title>Deep Learning com R</title>
     <meta charset="utf-8">
     <meta name="author" content="Curso-R" />
-    <meta name="date" content="2018-11-09" />
+    <meta name="date" content="2018-11-10" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
   </head>
@@ -14,7 +14,7 @@ class: center, middle, inverse, title-slide
 
 # Deep Learning com R
 ### Curso-R
-### 2018-11-09
+### 2018-11-10
 
 ---
 
@@ -35,6 +35,18 @@ Responder as seguintes perguntas:
 
 * Não vamos entrar em detalhes da matemática
 * Rodar modelos rápido!
+
+---
+
+# Referências
+
+* [Deep Learning Book](https://www.deeplearningbook.org)
+* [Deep Learning with R](https://www.manning.com/books/deep-learning-with-r)
+* [Tensorflow for R Blog](https://blogs.rstudio.com/tensorflow/)
+* [Exemplos do Keras](https://keras.rstudio.com/articles/examples/index.html)
+* [Blog do Colah](http://colah.github.io)
+
+![](https://images-na.ssl-images-amazon.com/images/I/61fim5QqaqL._SX373_BO1,204,203,200_.jpg)
 
 ---
 
@@ -118,7 +130,113 @@ for(i in 1:num_epochs) {
 &lt;img src="https://user-images.githubusercontent.com/4706822/48280375-870fdd00-e43a-11e8-868d-c5afa9e7c257.png" style="width: 90%"&gt;
 &lt;img src="https://user-images.githubusercontent.com/4706822/48280383-8d05be00-e43a-11e8-96e8-7f55b697ef6f.png" style="width: 90%"&gt;
 
+
 ---
+
+## TensorFlow
+
+É uma biblioteca geral de computação numérica.
+
+- Desenvolvida dentro da Google Brain para pesquisas em Redes Neurais
+- Open Source
+- Diferencição Automática
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AutomaticDifferentiationNutshell.png/1280px-AutomaticDifferentiationNutshell.png)
+
+---
+
+## Tensores
+
+(2d)
+
+
+```r
+head(data.matrix(iris), 10)
+```
+
+```
+##       Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+##  [1,]          5.1         3.5          1.4         0.2       1
+##  [2,]          4.9         3.0          1.4         0.2       1
+##  [3,]          4.7         3.2          1.3         0.2       1
+##  [4,]          4.6         3.1          1.5         0.2       1
+##  [5,]          5.0         3.6          1.4         0.2       1
+##  [6,]          5.4         3.9          1.7         0.4       1
+##  [7,]          4.6         3.4          1.4         0.3       1
+##  [8,]          5.0         3.4          1.5         0.2       1
+##  [9,]          4.4         2.9          1.4         0.2       1
+## [10,]          4.9         3.1          1.5         0.1       1
+```
+
+---
+
+
+## Tensores 
+
+(3d)
+
+![](https://github.com/curso-r/deep-learning-R/blob/master/3d-tensor.png?raw=true)
+
+---
+
+## Tensores 
+
+(4d)
+
+&lt;img src="https://github.com/curso-r/deep-learning-R/blob/master/4d-tensor.png?raw=true" style="width: 60%"&gt;
+
+---
+
+## TensorFlow
+
+.pull-left[
+  ![](https://github.com/curso-r/deep-learning-R/blob/master/flow.gif?raw=true)
+]
+
+.pull-right[
+  - Definimos o grafo
+  - o Grafo é compilado e otimizado
+  - O grafo é executado
+  - Os nós representam cálculos
+  - Os tensores *fluem* entre os nós.
+]
+
+---
+
+## Keras
+
+* Uma API que permite especificar modelos de *Deep Learning* de forma intuitiva e rápida.
+
+* Criada por François Chollet (@fchollet).
+
+&lt;img src="https://pbs.twimg.com/profile_images/831025272589676544/3g6BrXCE_400x400.jpg" style="width: 40%;"&gt;
+
+* Originalmente implementada em `python`.
+
+---
+
+## Keras
+
+* Uma API com múltiplas implementações.
+
+![](keras.svg)&lt;!-- --&gt;
+
+---
+
+## Keras + R
+
+* Pacote do R: [`keras`](https://github.com/rstudio/keras).
+
+* Baseado em [reticulate](https://github.com/rstudio/reticulate).
+
+* Desenvolvido pelo JJ Allaire (CEO do RStudio).
+
+* Tem uma sintaxe R-like com uso de `%&gt;%`.
+
+&lt;img src="https://i.ytimg.com/vi/D8yF9AtTTuQ/maxresdefault.jpg" style="width: 40%;"&gt;
+
+---
+
 
 # Exemplo 01
 
@@ -171,6 +289,30 @@ for(i in 1:num_epochs) {
 ---
 
 # Exemplo 04
+
+---
+
+# Exemplo 05
+
+---
+
+# Redes Neurais Recorrentes
+
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
+
+---
+
+# LSTM
+
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
+
+---
+
+# Exemplo 06
+
+---
+
+# Exemplo 07
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({

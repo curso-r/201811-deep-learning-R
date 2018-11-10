@@ -32,6 +32,18 @@ Responder as seguintes perguntas:
 
 ---
 
+# Referências
+
+* [Deep Learning Book](https://www.deeplearningbook.org)
+* [Deep Learning with R](https://www.manning.com/books/deep-learning-with-r)
+* [Tensorflow for R Blog](https://blogs.rstudio.com/tensorflow/)
+* [Exemplos do Keras](https://keras.rstudio.com/articles/examples/index.html)
+* [Blog do Colah](http://colah.github.io)
+
+![](https://images-na.ssl-images-amazon.com/images/I/61fim5QqaqL._SX373_BO1,204,203,200_.jpg)
+
+---
+
 # Inteligência Artificial, Machine Learning e Deep Learning
 
 ![](https://user-images.githubusercontent.com/4706822/48161809-a4ba3680-e2c2-11e8-856a-52b9a7e18586.png)
@@ -112,7 +124,100 @@ for(i in 1:num_epochs) {
 <img src="https://user-images.githubusercontent.com/4706822/48280375-870fdd00-e43a-11e8-868d-c5afa9e7c257.png" style="width: 90%">
 <img src="https://user-images.githubusercontent.com/4706822/48280383-8d05be00-e43a-11e8-96e8-7f55b697ef6f.png" style="width: 90%">
 
+
 ---
+
+## TensorFlow
+
+É uma biblioteca geral de computação numérica.
+
+- Desenvolvida dentro da Google Brain para pesquisas em Redes Neurais
+- Open Source
+- Diferencição Automática
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AutomaticDifferentiationNutshell.png/1280px-AutomaticDifferentiationNutshell.png)
+
+---
+
+## Tensores
+
+(2d)
+
+```{r}
+head(data.matrix(iris), 10)
+```
+
+---
+
+
+## Tensores 
+
+(3d)
+
+![](https://github.com/curso-r/deep-learning-R/blob/master/3d-tensor.png?raw=true)
+
+---
+
+## Tensores 
+
+(4d)
+
+<img src="https://github.com/curso-r/deep-learning-R/blob/master/4d-tensor.png?raw=true" style="width: 60%">
+
+---
+
+## TensorFlow
+
+.pull-left[
+  ![](https://github.com/curso-r/deep-learning-R/blob/master/flow.gif?raw=true)
+]
+
+.pull-right[
+  - Definimos o grafo
+  - o Grafo é compilado e otimizado
+  - O grafo é executado
+  - Os nós representam cálculos
+  - Os tensores *fluem* entre os nós.
+]
+
+---
+
+## Keras
+
+* Uma API que permite especificar modelos de *Deep Learning* de forma intuitiva e rápida.
+
+* Criada por François Chollet (@fchollet).
+
+<img src="https://pbs.twimg.com/profile_images/831025272589676544/3g6BrXCE_400x400.jpg" style="width: 40%;">
+
+* Originalmente implementada em `python`.
+
+---
+
+## Keras
+
+* Uma API com múltiplas implementações.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("keras.svg")
+```
+
+---
+
+## Keras + R
+
+* Pacote do R: [`keras`](https://github.com/rstudio/keras).
+
+* Baseado em [reticulate](https://github.com/rstudio/reticulate).
+
+* Desenvolvido pelo JJ Allaire (CEO do RStudio).
+
+* Tem uma sintaxe R-like com uso de `%>%`.
+
+<img src="https://i.ytimg.com/vi/D8yF9AtTTuQ/maxresdefault.jpg" style="width: 40%;">
+
+---
+
 
 # Exemplo 01
 
@@ -173,6 +278,22 @@ for(i in 1:num_epochs) {
 ---
 
 # Redes Neurais Recorrentes
+
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
+
+---
+
+# LSTM
+
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
+
+---
+
+# Exemplo 06
+
+---
+
+# Exemplo 07
 
 
 
