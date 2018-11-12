@@ -97,7 +97,7 @@ ggplot(data.frame(X = X, y = y), aes(x = X, y = y)) +
 
 input <- layer_input(n_col)
 output <- input %>% 
-  layer_dense(units = 100, activation = "relu") %>%
+  layer_dense(units = 100, activation = "relu", name = "nome1") %>%
   layer_dense(units = 1)
 
 modelo <- keras_model(input, output)
@@ -111,6 +111,8 @@ modelo %>%
 
 modelo %>% 
   fit(X , y, validation_split = 0.2, epochs = 100)
+
+pesos <- get_weights(modelo)
 
 y_hat <- predict(modelo, X)
 rmse(y, y_hat)

@@ -17,6 +17,8 @@ output <- input %>%
 
 
 model <- keras_model(input, output)
+model
+
 model %>% 
   compile(
     loss = "mse",

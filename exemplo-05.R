@@ -8,8 +8,6 @@ library(zeallot)
 c(c(x_train, y_train), c(x_test, y_test)) %<-% dataset_mnist()
 dim(x_train)
 
-# Filtrando apenas os 1 e 7 -----------------------------------------------
-
 
 x_train <- x_train[]/255
 y_train <- y_train[]
@@ -18,6 +16,7 @@ x_test <- x_test[]/255
 y_test <- y_test[]
 
 y_train <- to_categorical(y_train)
+
 dim(y_train)
 
 y_test <- to_categorical(y_test)
@@ -25,7 +24,9 @@ y_test <- to_categorical(y_test)
 x_train <- abind(x_train, along = 4)
 x_test <- abind(x_test, along = 4)
 
-plot(as.raster(x_train[1,,,]))
+dim(x_train)
+
+plot(as.raster(x_train[159,,,]))
 
 # Definindo o modelo ------------------------------------------------------
 

@@ -20,13 +20,14 @@ y_test <- y_test[y_test %in% c(2,9)]
 y_train <- as.numeric(y_train == 2)
 y_test <- as.numeric(y_test == 2)
 
+dim(x_train)
+
 x_train <- abind(x_train, along = 4)
 x_test <- abind(x_test, along = 4)
 
 dim(x_train)
 
-
-plot(as.raster(x_train[1,,,]))
+plot(as.raster(x_train[150,,,]))
 table(y_train)
 
 # Mini Exemplo
@@ -38,12 +39,14 @@ input %>%
   print()
 
 input %>% 
-  layer_conv_2d(filters = 8, kernel_size = 2, padding = "same") %>% 
+  layer_conv_2d(filters = 8, kernel_size = 2) %>% 
   print()
 
 input %>% 
   layer_max_pooling_2d(pool_size = c(2,2)) %>% 
   print()
+
+
 
 # Definindo o modelo ------------------------------------------------------
 
